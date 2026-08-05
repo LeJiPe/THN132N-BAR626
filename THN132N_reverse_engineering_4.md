@@ -46,6 +46,6 @@ Il a fallu tout reprendre, en repartant sur un microcontrôleur moderne disposan
 
 ## Et maintenant
 
-L'algorithme de CRC est validé, la synchronisation avec le BAR626 fonctionne, et la sonde actuelle est en cours de finalisation. Plusieurs pistes d'évolution restent ouvertes : un mécanisme de changement de rollcode — détection d'une coupure d'alimentation au démarrage dans une fenêtre de 4 à 12 secondes, répétée deux fois, puis addition d'un nombre premier au rollcode — et pourquoi pas une compensation thermique du quartz pour les utilisateurs en environnements très froids.
+L'algorithme de CRC est validé, la synchronisation avec le BAR626 fonctionne, et la sonde actuelle est plainement opérationnelle. j'y ai ajouté un mode économique, fréquence d'émission des trames divisée  par 2. Plusieurs petites améliorations restent ouvertes : un mécanisme de changement de rollcode (de base fait par numéro de série) modifiable — détection d'une coupure d'alimentation au démarrage dans une fenêtre de 4 à 12 secondes, répétée deux fois, puis addition d'un nombre premier au rollcode — et pourquoi pas une compensation thermique du quartz pour les utilisateurs en environnements très froids.
 
 Si vous vous êtes déjà arraché les cheveux sur ces sondes, j'espère que ce récit — et surtout la formule de CRC — vous fera gagner beaucoup de temps.
