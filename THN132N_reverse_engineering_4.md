@@ -2,7 +2,7 @@
 
 ## Le problème
 
-Avec des amis, nous possédons tous un récepteur météo Oregon Scientific **BAR626**. Le souci, c'est que ses sondes extérieures compatibles — THN132N, THN122, les sondes d'origine du constructeur — tombent en panne au bout de quelques années, et sont aujourd'hui introuvables sur le marché. Même les fabricants chinois, pourtant coutumiers du fait, n'ont jamais réussi à les copier : aucune sonde du commerce actuelle n'est compatible avec ce récepteur.
+Avec des amis, nous possédons tous un récepteur météo Oregon Scientific **BAR626**. Le souci, c'est que ses sondes extérieures d'origine du constructeur — THN132N, THN122,  — tombent en panne au bout de quelques années, et sont aujourd'hui introuvables sur le marché. Même les fabricants chinois, pourtant coutumiers du fait, n'ont jamais réussi à les copier : aucune sonde du commerce actuelle n'est compatible avec ce récepteur.
 
 Ce n'est pas faute d'avoir cherché du côté de la communauté : sur GitHub et ailleurs, plusieurs personnes butent depuis longtemps sur le calcul du CRC de ces trames. Des tables de relevés partielles existent, mais aucune ne s'est révélée compatible à 100 % avec le récepteur.
 
