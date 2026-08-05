@@ -1,4 +1,4 @@
-# L'énigme Oregon : comment j'ai fini par percer le CRC des sondes THN132N/THN122
+# L'énigme du sphinx Oregon : comment j'ai fini par percer le CRC des sondes THN132N/THN122
 
 ## Le problème
 
