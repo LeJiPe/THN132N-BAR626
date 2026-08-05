@@ -1,2 +1,0 @@
-# THN132N-BAR626
-Sonde compatible 100% THN132N THN122
