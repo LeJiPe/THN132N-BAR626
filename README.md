@@ -13,6 +13,7 @@ Je ne suis ni informaticien ni électronicien de formation. Mais j'avais encore 
 Pour faire parler cette dernière sonde survivante, j'ai construit un robot de test : des potentiomètres à la place des CTN, montés sur des servomoteurs pour balayer toutes les valeurs de température possibles, et des relais pour piloter les canaux.
 
 Le robot a tourné pendant **3 jours** — cliquetis des relais, crissement des servomoteurs, au grand dam de ma femme — et m'a permis de collecter un très grand nombre de trames réelles, émises par une vraie sonde, avec leur CRC correct.
+
  <img src="photos/Robot_Servo.jpg" width="300" alt="Robot_Servo">
 
 ## La chasse au CRC
