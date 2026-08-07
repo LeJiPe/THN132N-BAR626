@@ -40,6 +40,7 @@ Fort de cet algorithme, je me suis lancé dans la fabrication d'une sonde de rem
 N'ayant ni oscilloscope ni analyseur logique, j'ai dû ruser pour caler les timings : tous mes relevés de trames ont été faits avec une simple carte son, et j'ai déterminé les timings par superposition entre les trames générées et celles attendues par le récepteur. Le BAR626 s'est révélé très sensible à ces timings, y compris à l'intervalle très précis entre chaque émission — au point que j'ai fini par démonter le récepteur lui-même et enregistrer son activation en fonction de la perte de signal, pour connaître exactement ce qu'il attendait.
 
 Pour le réveil périodique du PIC, j'ai utilisé l'oscillateur interne du watchdog. Résultat : la sonde fonctionnait parfaitement.
+<img src="photos/TMP117_PIC12F1822_1.jpg" width="300" alt="PIC12F1822">
 
 ## Le piège
 
