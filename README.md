@@ -29,7 +29,7 @@ J'ai testé la formule complète sur plusieurs dizaines de trames. Ça marchait.
 Il fallait absolument valider ça sur du matériel réel. J'ai implémenté l'algorithme sur un Arduino, et je l'ai fait émettre vers mon BAR626.
 
 Miracle : le récepteur se synchronise. Je pouvais désormais lui faire afficher n'importe quelle valeur de mon choix sur n'importe quel canal, de -99.9 à 99.9, le récepteur acceptait tout.
-<img src="photos/Affiche99_9.jpg" width="300" alt="Affiche 99.9">
+<img src="photos/Affiche99_9.jpg" width="300" alt="Affiche 99.9"> <img src="photos/Affiche_-99_9.jpg" width="300" alt="Affiche 99.9">
 
 ## Construire une vraie sonde de remplacement
 
