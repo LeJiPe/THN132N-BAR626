@@ -41,6 +41,7 @@ Fort de cet algorithme, je me suis lancé dans la fabrication d'une sonde de rem
 N'ayant ni oscilloscope ni analyseur logique, j'ai dû ruser pour caler les timings : tous mes relevés de trames ont été faits avec une simple carte son, et j'ai déterminé les timings par superposition entre les trames générées et celles attendues par le récepteur. Le BAR626 s'est révélé très sensible à ces timings, y compris à l'intervalle très précis entre chaque émission — au point que j'ai fini par démonter le récepteur lui-même et enregistrer son activation en fonction de la perte de signal, pour connaître exactement ce qu'il attendait.
 
 Pour le réveil périodique du PIC, j'ai utilisé l'oscillateur interne du watchdog. Résultat : la sonde fonctionnait parfaitement.
+
 <img src="photos/TMP117_PIC12F1822_1.jpg" width="300" alt="PIC12F1822">
 
 ## Le piège
@@ -48,6 +49,7 @@ Pour le réveil périodique du PIC, j'ai utilisé l'oscillateur interne du watch
 Content du résultat, j'ai voulu en construire une deuxième pour des amis. Et là, patatras : le timing basé sur le watchdog était complètement dans les choux sur ce deuxième exemplaire. Le système n'était tout simplement pas reproductible d'une puce à l'autre — la dispersion de fréquence de l'oscillateur interne du watchdog était trop grande d'un composant à l'autre.
 
 Il a fallu tout reprendre, en repartant sur un microcontrôleur moderne disposant d'un vrai RTC, en réutilisant la base déjà développée sur Arduino. C'est ce qui a donné naissance au projet actuel, une sonde bâtie autour d'un ATtiny1616.
+
 <img src="photos/Thn132_Circuit3.jpg" width="300" alt="Circuit3"><img src="photos/Thn132_Circuit1.jpg" width="300" alt="Circuit1"><img src="photos/CircuitFafoté_STX882.jpg" width="300" alt="STX882">
 
 
