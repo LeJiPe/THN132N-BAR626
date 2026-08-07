@@ -13,6 +13,7 @@ Je ne suis ni informaticien ni électronicien de formation. Mais j'avais encore 
 Pour faire parler cette dernière sonde survivante, j'ai construit un robot de test : des potentiomètres à la place des CTN, montés sur des servomoteurs pour balayer toutes les valeurs de température possibles, et des relais pour piloter les canaux.
 
 Le robot a tourné pendant **3 jours** — cliquetis des relais, crissement des servomoteurs, au grand dam de ma femme — et m'a permis de collecter un très grand nombre de trames réelles, émises par une vraie sonde, avec leur CRC correct.
+ <img src="photos/Robot_Servo.jpg" width="300" alt="Robot_Servo">
 
 ## La chasse au CRC
 
@@ -29,7 +30,7 @@ J'ai testé la formule complète sur plusieurs dizaines de trames. Ça marchait.
 Il fallait absolument valider ça sur du matériel réel. J'ai implémenté l'algorithme sur un Arduino, et je l'ai fait émettre vers mon BAR626.
 
 Miracle : le récepteur se synchronise. Je pouvais désormais lui faire afficher n'importe quelle valeur de mon choix sur n'importe quel canal, de -99.9 à 99.9, le récepteur acceptait tout.
-<img src="photos/Affiche99_9.jpg" width="300" alt="Affiche 99.9"> <img src="photos/Affiche_-99_9.jpg" width="300" alt="Affiche 99.9">
+<img src="photos/Affiche99_9.jpg" width="300" alt="Affiche 99.9"> <img src="photos/Affiche_-99_9.jpg" width="300" alt="Affiche -99.9">
 
 ## Construire une vraie sonde de remplacement
 
