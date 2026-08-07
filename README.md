@@ -47,6 +47,8 @@ Pour le réveil périodique du PIC, j'ai utilisé l'oscillateur interne du watch
 Content du résultat, j'ai voulu en construire une deuxième pour des amis. Et là, patatras : le timing basé sur le watchdog était complètement dans les choux sur ce deuxième exemplaire. Le système n'était tout simplement pas reproductible d'une puce à l'autre — la dispersion de fréquence de l'oscillateur interne du watchdog était trop grande d'un composant à l'autre.
 
 Il a fallu tout reprendre, en repartant sur un microcontrôleur moderne disposant d'un vrai RTC, en réutilisant la base déjà développée sur Arduino. C'est ce qui a donné naissance au projet actuel, une sonde bâtie autour d'un ATtiny1616.
+<img src="photos/Thn132_Circuit3.jpg" width="300" alt="Circuit3"><img src="photos/Thn132_Circuit1.jpg" width="300" alt="Circuit1"><img src="photos/CircuitFafoté_STX882.jpg" width="300" alt="STX882">
+
 
 ## Et maintenant
 
