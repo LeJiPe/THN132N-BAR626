@@ -22,7 +22,7 @@ J'ai commencé par soumettre ce paquet de trames à plusieurs IA, en espérant q
 
 J'ai donc changé d'approche. Avec toutes ces trames, j'ai pu isoler facilement les données qui faisaient varier le CRC. Autre constat : le CRC étant codé sur 8 bits, plusieurs trames différentes peuvent partager le même CRC. Plutôt que de chercher sur l'ensemble du jeu de données, j'ai isolé **3 groupes de trames donnant le même CRC** — ce qui réduisait considérablement le champ de recherche d'une formule capable de reproduire ce résultat.
 
-J'ai alors demandé à une IA de m'écrire de petits programmes pour tester différents algorithmes candidats sur ces groupes. Et un jour, un programme s'arrête : une formule donne enfin un résultat identique pour les trois groupes. Le résultat brut n'était pas le bon CRC final, il restait une transformation à trouver — assez simple en fait : un **XOR par 0x59**, suivi d'une **inversion des quartets** (nibbles).
+J'ai connecté mes 3 synapses et demandé à l'aide IA de m'écrire des petits programmes en Python (que je ne connais pas) pouvant tourner sur mon petit PC, afin de tester différents algorithmes candidats sur ces groupes. Et un jour, un programme s'arrête : une combinaison donne enfin un résultat identique pour les trois groupes. Le résultat brut n'était pas le bon CRC final, il restait une transformation à trouver — assez simple en fait : un **XOR par 0x59**, suivi d'une **inversion des quartets** (nibbles).
 
 J'ai testé la formule complète sur plusieurs dizaines de trames. Ça marchait.
 
