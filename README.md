@@ -1,8 +1,8 @@
-# L'énigme du sphinx Oregon : comment j'ai fini par percer le CRC des sondes THN132N/THN122
+# L'énigme du sphinx Oregon : comment j'ai fini par percer le CRC des sondes THN132N/THN122 avec une carte son
 
 ## Le problème
 
-Avec des amis, nous possédons tous un récepteur météo Oregon Scientific **BAR626**. Le souci, c'est que ses sondes extérieures d'origine du constructeur — THN132N, THN122,  — tombent en panne au bout de quelques années, et sont aujourd'hui introuvables sur le marché. Les fabricants chinois n'ont jamais copié cette sonde. Aucune sonde du commerce actuelle n'est compatible avec ce récepteur.
+Avec des amis, nous possédons tous un récepteur météo Oregon Scientific **BAR626**. Le souci est que ses sondes extérieures d'origine du constructeur — THN132N, THN122,  — tombent en panne au bout de quelques années, et sont aujourd'hui introuvables sur le marché. Les fabricants chinois n'ont jamais copié cette sonde. Aucune sonde du commerce actuelle n'est compatible avec ce récepteur.
 
 Ce n'est pas faute d'avoir cherché du côté de la communauté : sur GitHub et ailleurs, plusieurs personnes butent depuis longtemps sur le calcul du CRC de ces trames. Des tables de relevés partielles existent, mais aucune ne s'est révélée compatible à 100 % avec le récepteur.
 
