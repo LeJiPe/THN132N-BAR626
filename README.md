@@ -10,7 +10,7 @@ Je ne suis ni informaticien ni électronicien de formation. Mais j'avais encore 
 
 ## Le robot "Enigma Oregon"
 
-Pour faire parler cette dernière sonde survivante, j'ai construit un robot de test : des potentiomètres à la place des CTN, montés sur des servomoteurs pour balayer toutes les valeurs de température possibles, et des relais pour piloter les canaux.
+Pour faire parler cette dernière sonde survivante, j'ai construit un robot de test : des potentiomètres à la place des CTN, montés sur des servomoteurs pour balayer un grand nombre de valeurs de température , et des relais pour piloter les canaux.
 
 Le robot a tourné pendant **3 jours** — cliquetis des relais, crissement des servomoteurs, au grand dam de ma femme — et m'a permis de collecter un très grand nombre de trames réelles, émises par une vraie sonde, avec leur CRC correct.
 
