@@ -1,4 +1,7 @@
-# L'énigme du sphinx Oregon : comment j'ai fini par percer le CRC des sondes THN132N/THN122 avec une carte son
+##  L'énigme du sphinx Oregon 
+## 🛠️ 1 - comment j'ai fini par percer le CRC des sondes THN132N/THN122 avec une carte son
+## 🛠️ 2 - Amélioration de la Station BAR626 : Remplacement du Récepteur par un SRX882
+
 
 ## Le problème
 
@@ -60,7 +63,7 @@ L'algorithme de CRC est validé, la synchronisation avec le BAR626 fonctionne, e
 Si vous vous êtes déjà arraché les cheveux sur ces sondes, j'espère que ce récit — et surtout la formule de CRC — vous fera gagner beaucoup de temps.
 
 
-## 🛠️ Amélioration de la Station BAR626 : Remplacement du Récepteur par un SRX882
+## 🛠️ 2 - Amélioration de la Station BAR626 : Remplacement du Récepteur par un SRX882
 
 Le récepteur RF 433 MHz d'origine de la station BAR626 vieillit mal et perd en sensibilité. Le remplacer par un module superhétérodyne moderne **SRX882** permet de retrouver une excellente portée, mais nécessite d'adapter l'alimentation.
 
