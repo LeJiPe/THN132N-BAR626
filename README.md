@@ -71,8 +71,9 @@ La ligne d'alimentation d'origine du récepteur sur le PCB est limitée à envir
 Le récepteur est alimenté directement par le bloc de piles (3xAA), tandis que la broche **CS (Chip Select)** gère les cycles de mise en veille.
 
 <p align="center">
-  <img src="photos/Encombrement.jpg" alt="Modification du module SRX882 avec résistance de pull-down" width="450">
-  <br><em>Préparation du SRX882 : Ajout de la résistance de pull-down de 47 kΩ sur la broche CS.</em>
+  <img src="photos/plotsConnexion433.jpg" alt="Plots de connexion vers le récepteur." width="450">
+  <br><em>Attention le négatif est à gauche, fil rouge !!! </em>
+  
 </p>
 
 #### Schéma de câblage :
@@ -82,7 +83,7 @@ Le récepteur est alimenté directement par le bloc de piles (3xAA), tandis que 
 4. **Sécurité de veille :** Résistance de **pull-down de 47 kΩ** entre CS et GND.
 
 <p align="center">
-  <img src="photos/pcb_soudures.jpg" alt="Points de soudure sur le PCB Oregon" width="450">
+  <img src="photos/cablage SRX882.jpg" alt="Points de soudure sur le PCB Oregon" width="450">
   <br><em>Points d'implantation sur le PCB de la BAR626.</em>
 </p>
 
@@ -92,7 +93,7 @@ Le récepteur fonctionne désormais de manière stable **jusqu'à 2,8 Volts**.
 * **Consommation en réception :** 4,12 mA
 
 <p align="center">
-  <img src="photos/mesure_consommation.jpg" alt="Mesures de consommation sur alimentation de labo" width="450">
+  <img src="photos/conso_RX_Actif_Alim2800mV.jpg" alt="Mesures de consommation sur alimentation de labo" width="450">
   <br><em>Validation sur banc de test.</em>
 </p>
 
@@ -100,7 +101,8 @@ Le récepteur fonctionne désormais de manière stable **jusqu'à 2,8 Volts**.
 Plus compact, le SRX882 se fixe simplement par collage à l'intérieur du boîtier de la BAR626.
 
 <p align="center">
-  <img src="photos/integration_boitier.jpg" alt="Intégration finale du SRX882 dans le boîtier" width="450">
+  <img src="photos/Encombrement.jpg" alt="Intégration finale du SRX882 dans le boîtier" width="450">
+ <br><em>Préparation du SRX882 : Ajout de la résistance de pull-down de 47 kΩ sur la broche CS.</em>
 </p>
 
 **Bilan :** L'autonomie s'élève à **environ 10 mois** sur piles AA de 2500 mAh, avec des performances radio grandement améliorées.
