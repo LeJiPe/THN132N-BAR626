@@ -71,7 +71,7 @@ La ligne d'alimentation d'origine du récepteur sur le PCB est limitée à envir
 Le récepteur est alimenté directement par le bloc de piles (3xAA), tandis que la broche **CS (Chip Select)** gère les cycles de mise en veille.
 
 <p align="center">
-  <img src="photos/srx882_resistance.jpg" alt="Modification du module SRX882 avec résistance de pull-down" width="450">
+  <img src="photos/Encombrement.jpg" alt="Modification du module SRX882 avec résistance de pull-down" width="450">
   <br><em>Préparation du SRX882 : Ajout de la résistance de pull-down de 47 kΩ sur la broche CS.</em>
 </p>
 
