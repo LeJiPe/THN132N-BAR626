@@ -58,3 +58,50 @@ Il a fallu tout reprendre, en repartant sur un microcontrôleur moderne disposan
 L'algorithme de CRC est validé, la synchronisation avec le BAR626 fonctionne, et la sonde actuelle est plainement opérationnelle. j'y ai ajouté un mode économique, fréquence d'émission des trames divisée  par 2. Plusieurs petites améliorations restent ouvertes : un mécanisme de changement de rollcode (de base fait par numéro de série) modifiable — détection d'une coupure d'alimentation au démarrage dans une fenêtre de 4 à 12 secondes, répétée deux fois, puis addition d'un nombre premier au rollcode — et pourquoi pas une compensation thermique du quartz pour les utilisateurs en environnements très froids.
 
 Si vous vous êtes déjà arraché les cheveux sur ces sondes, j'espère que ce récit — et surtout la formule de CRC — vous fera gagner beaucoup de temps.
+
+
+## 🛠️ Amélioration de la Station BAR626 : Remplacement du Récepteur par un SRX882
+
+Le récepteur RF 433 MHz d'origine de la station BAR626 vieillit mal et perd en sensibilité. Le remplacer par un module superhétérodyne moderne **SRX882** permet de retrouver une excellente portée, mais nécessite d'adapter l'alimentation.
+
+### Le défi technique : La limitation de la ligne PWR d'origine
+La ligne d'alimentation d'origine du récepteur sur le PCB est limitée à environ 1 mA. Lorsque le SRX882 demande ses ~2,8 mA, cela provoque une chute de tension : **dès que les piles descendent à 3,2 Volts, le récepteur cesse d'être alimenté**.
+
+### La solution matérielle : Alimentation directe et bascule logique via la broche CS
+Le récepteur est alimenté directement par le bloc de piles (3xAA), tandis que la broche **CS (Chip Select)** gère les cycles de mise en veille.
+
+<p align="center">
+  <img src="photos/srx882_resistance.jpg" alt="Modification du module SRX882 avec résistance de pull-down" width="450">
+  <br><em>Préparation du SRX882 : Ajout de la résistance de pull-down de 47 kΩ sur la broche CS.</em>
+</p>
+
+#### Schéma de câblage :
+1. **VCC :** Soudé directement sur l'alimentation brute de la batterie (3xAA).
+2. **GND :** Connecté à la masse d'origine de la station.
+3. **CS (Chip Select) :** Raccordé à l'ancienne piste d'alimentation intermittente (PWR).
+4. **Sécurité de veille :** Résistance de **pull-down de 47 kΩ** entre CS et GND.
+
+<p align="center">
+  <img src="photos/pcb_soudures.jpg" alt="Points de soudure sur le PCB Oregon" width="450">
+  <br><em>Points d'implantation sur le PCB de la BAR626.</em>
+</p>
+
+### Résultats et performances
+Le récepteur fonctionne désormais de manière stable **jusqu'à 2,8 Volts**.
+* **Consommation en veille :** 72 µA
+* **Consommation en réception :** 4,12 mA
+
+<p align="center">
+  <img src="photos/mesure_consommation.jpg" alt="Mesures de consommation sur alimentation de labo" width="450">
+  <br><em>Validation sur banc de test.</em>
+</p>
+
+### Intégration mécanique
+Plus compact, le SRX882 se fixe simplement par collage à l'intérieur du boîtier de la BAR626.
+
+<p align="center">
+  <img src="photos/integration_boitier.jpg" alt="Intégration finale du SRX882 dans le boîtier" width="450">
+</p>
+
+**Bilan :** L'autonomie s'élève à **environ 10 mois** sur piles AA de 2500 mAh, avec des performances radio grandement améliorées.
+
